@@ -32,7 +32,7 @@ const divisions = [
     icon: BrainCircuit
   },
   {
-    name: 'Kone Code',
+    name: 'Kone Academy',
     tagline: 'Software Education',
     description: 'Professional-grade curriculum covering full-stack web, Python engineering, C/C++ systems, and data science.',
     logo: '/app-code.svg',
