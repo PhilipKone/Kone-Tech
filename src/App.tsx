@@ -139,7 +139,7 @@ const faderUp = {
   visible: { 
     opacity: 1, 
     y: 0,
-    transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] }
+    transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] as const }
   }
 };
 
@@ -169,7 +169,7 @@ function App() {
         className="site-header"
         initial={{ y: -50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+        transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] as const }}
       >
         <div className="header-inner">
           <div className="site-logo">
@@ -266,7 +266,7 @@ function App() {
             className="hero-title"
             variants={{
               hidden: { opacity: 0, y: 40 },
-              visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } }
+              visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] as const } }
             }}
           >
             Architecting <br />
@@ -331,14 +331,14 @@ function App() {
                   visible: { 
                     opacity: 1, 
                     y: 0,
-                    transition: { duration: 0.6, ease: [0.16, 1, 0.3, 1] } 
+                    transition: { duration: 0.6, ease: [0.16, 1, 0.3, 1] as const } 
                   }
                 }}
                 whileHover={{ y: -6, transition: { duration: 0.2 } }}
                 style={{
                   '--card-glow-color': div.glow,
                   '--card-border-color': isHovered ? div.color : 'rgba(255, 255, 255, 0.06)'
-                }}
+                } as React.CSSProperties}
               >
                 <div className="card-glow"></div>
                 <div className="card-top">
@@ -393,7 +393,7 @@ function App() {
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] as const }}
           >
             <div className="graphic-container">
               <div className="circle-orbit orbit-1"></div>
