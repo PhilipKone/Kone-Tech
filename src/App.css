@@ -44,9 +44,12 @@
   font-size: 1.2rem;
   font-weight: 700;
   letter-spacing: -0.5px;
-  background: var(--gradient-brand);
+  background-image: linear-gradient(135deg, #BC00FF 0%, #00D1FF 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
+  color: #BC00FF; /* Fallback color for browsers/extensions overriding transparency */
+  forced-color-adjust: none; /* Prevents Dark Reader/Edge High Contrast from breaking the gradient */
 }
 
 .nav-links {
@@ -145,9 +148,12 @@
 }
 
 .text-gradient {
-  background: var(--gradient-brand);
+  background-image: linear-gradient(135deg, #BC00FF 0%, #00D1FF 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
+  color: #00D1FF; /* Fallback color for browsers/extensions overriding transparency */
+  forced-color-adjust: none; /* Prevents Dark Reader/Edge High Contrast from breaking the gradient */
 }
 
 .hero-subtitle {
