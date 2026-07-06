@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { 
   Shield, 
   ExternalLink, 
@@ -132,6 +133,26 @@ const divisions = [
   }
 ];
 
+/* ── Animation Presets ─────────────────────────────────── */
+const faderUp = {
+  hidden: { opacity: 0, y: 30 },
+  visible: { 
+    opacity: 1, 
+    y: 0,
+    transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] }
+  }
+};
+
+const containerStagger = {
+  hidden: { opacity: 1 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.08
+    }
+  }
+};
+
 function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [hoveredCard, setHoveredCard] = useState(null);
@@ -144,68 +165,160 @@ function App() {
       <div className="glow-blob glow-blob-2"></div>
 
       {/* Header */}
-      <header className="site-header">
+      <motion.header 
+        className="site-header"
+        initial={{ y: -50, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+      >
         <div className="header-inner">
           <div className="site-logo">
             <img src="/favicon.svg" alt="Kone Tech Logo" className="logo-svg" />
             <span className="logo-text">Kone Technologies</span>
           </div>
 
-          <nav className={`nav-links ${mobileMenuOpen ? 'mobile-open' : ''}`}>
-            <a href="#ecosystem" onClick={() => setMobileMenuOpen(false)}>Ecosystem</a>
-            <a href="#about" onClick={() => setMobileMenuOpen(false)}>Mission</a>
-            <a href="#governance" onClick={() => setMobileMenuOpen(false)}>Structure</a>
-            <a href="https://www.koneacademy.io" target="_blank" rel="noreferrer" className="mobile-only-btn">Kone Academy</a>
+          {/* Desktop Nav */}
+          <nav className="nav-links desktop-only">
+            <a href="#ecosystem">Ecosystem</a>
+            <a href="#about">Mission</a>
+            <a href="#about">Structure</a>
           </nav>
 
           <div className="header-actions">
-            <a href="https://www.koneacademy.io" target="_blank" rel="noreferrer" className="btn-academy-link">
+            <a href="https://www.koneacademy.io" target="_blank" rel="noreferrer" className="btn-academy-link desktop-only">
               Visit Kone Academy <ExternalLink size={14} style={{ marginLeft: '4px' }} />
             </a>
-            <button className="menu-toggle" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+            <button 
+              className="menu-toggle" 
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              aria-label="Toggle Navigation Menu"
+            >
               {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>
         </div>
-      </header>
+      </motion.header>
+
+      {/* Mobile Menu Overlay */}
+      <AnimatePresence>
+        {mobileMenuOpen && (
+          <motion.div 
+            className="mobile-nav-overlay"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+          >
+            <motion.div 
+              className="mobile-nav-content"
+              initial={{ x: '100%' }}
+              animate={{ x: 0 }}
+              exit={{ x: '100%' }}
+              transition={{ type: 'spring', damping: 25, stiffness: 200 }}
+            >
+              <div className="mobile-nav-header">
+                <span className="logo-text">Kone Tech</span>
+                <button className="close-btn" onClick={() => setMobileMenuOpen(false)}>
+                  <X size={24} />
+                </button>
+              </div>
+              <div className="mobile-menu-links">
+                <a href="#ecosystem" onClick={() => setMobileMenuOpen(false)}>
+                  <span>01.</span> Ecosystem
+                </a>
+                <a href="#about" onClick={() => setMobileMenuOpen(false)}>
+                  <span>02.</span> Mission
+                </a>
+                <a href="https://www.koneacademy.io" target="_blank" rel="noreferrer">
+                  <span>03.</span> Kone Academy <ExternalLink size={14} style={{ marginLeft: '6px', display: 'inline' }} />
+                </a>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       {/* Hero Section */}
       <section className="hero-section">
-        <div className="hero-content">
-          <div className="badge">
+        <motion.div 
+          className="hero-content"
+          initial="hidden"
+          animate="visible"
+          variants={{
+            hidden: { opacity: 0 },
+            visible: { 
+              opacity: 1, 
+              transition: { staggerChildren: 0.15 } 
+            }
+          }}
+        >
+          <motion.div 
+            className="badge"
+            variants={{
+              hidden: { opacity: 0, y: -20 },
+              visible: { opacity: 1, y: 0, transition: { type: 'spring', stiffness: 100 } }
+            }}
+          >
             <Shield size={12} className="badge-icon" /> Parent Entity of Kone Group
-          </div>
-          <h1 className="hero-title">
+          </motion.div>
+          
+          <motion.h1 
+            className="hero-title"
+            variants={{
+              hidden: { opacity: 0, y: 40 },
+              visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } }
+            }}
+          >
             Architecting <br />
             <span className="text-gradient">The Digital Frontier</span>
-          </h1>
-          <p className="hero-subtitle">
+          </motion.h1>
+
+          <motion.p 
+            className="hero-subtitle"
+            variants={faderUp}
+          >
             Kone Technologies is a decentralized technology holding group directing pioneering research, advanced hardware engineering, elite education, and real-world commercial utilities.
-          </p>
-          <div className="hero-actions">
+          </motion.p>
+
+          <motion.div 
+            className="hero-actions"
+            variants={faderUp}
+          >
             <a href="#ecosystem" className="btn-primary">
               Explore Ecosystem <ArrowRight size={16} style={{ marginLeft: '8px' }} />
             </a>
             <a href="#about" className="btn-secondary">Learn Our Mission</a>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </section>
 
       {/* Ecosystem Section */}
       <section id="ecosystem" className="ecosystem-section">
-        <div className="section-header">
+        <motion.div 
+          className="section-header"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: '-100px' }}
+          variants={faderUp}
+        >
           <h2 className="section-title">The Kone Ecosystem</h2>
           <p className="section-subtitle">
             An interconnected conglomerate of specialized divisions pushing the boundaries of software, engineering, logistics, and agriculture.
           </p>
-        </div>
+        </motion.div>
 
-        <div className="ecosystem-grid">
+        <motion.div 
+          className="ecosystem-grid"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: '-50px' }}
+          variants={containerStagger}
+        >
           {divisions.map((div, idx) => {
             const Icon = div.icon;
             const isHovered = hoveredCard === idx;
             return (
-              <a 
+              <motion.a 
                 href={div.url} 
                 target="_blank" 
                 rel="noopener noreferrer" 
@@ -213,6 +326,15 @@ function App() {
                 className="ecosystem-card"
                 onMouseEnter={() => setHoveredCard(idx)}
                 onMouseLeave={() => setHoveredCard(null)}
+                variants={{
+                  hidden: { opacity: 0, y: 35 },
+                  visible: { 
+                    opacity: 1, 
+                    y: 0,
+                    transition: { duration: 0.6, ease: [0.16, 1, 0.3, 1] } 
+                  }
+                }}
+                whileHover={{ y: -6, transition: { duration: 0.2 } }}
                 style={{
                   '--card-glow-color': div.glow,
                   '--card-border-color': isHovered ? div.color : 'rgba(255, 255, 255, 0.06)'
@@ -230,16 +352,22 @@ function App() {
                 <h3 className="card-title">{div.name}</h3>
                 <span className="card-tagline" style={{ color: div.color }}>{div.tagline}</span>
                 <p className="card-desc">{div.description}</p>
-              </a>
+              </motion.a>
             );
           })}
-        </div>
+        </motion.div>
       </section>
 
       {/* About Section */}
       <section id="about" className="about-section">
         <div className="about-grid">
-          <div className="about-content">
+          <motion.div 
+            className="about-content"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: '-100px' }}
+            variants={faderUp}
+          >
             <h2 className="section-title">Pioneering At Inception</h2>
             <p className="about-text">
               Kone Technologies functions under a flywheel mechanism where each division drives innovation into the next. Our academic research fuels custom hardware development, which inspires state-of-the-art educational courses, subsequently training the creators of our real-world agricultural, e-commerce, and logistics platforms.
@@ -258,8 +386,15 @@ function App() {
                 <div className="highlight-label">Autonomous Operations</div>
               </div>
             </div>
-          </div>
-          <div className="about-graphic">
+          </motion.div>
+          
+          <motion.div 
+            className="about-graphic"
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+          >
             <div className="graphic-container">
               <div className="circle-orbit orbit-1"></div>
               <div className="circle-orbit orbit-2"></div>
@@ -268,7 +403,7 @@ function App() {
                 <img src="/logo-glass.svg" alt="Logo" className="orbit-logo" />
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
 
