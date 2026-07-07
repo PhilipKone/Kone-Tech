@@ -5,6 +5,7 @@ import {
   ExternalLink,
   BrainCircuit,
   Code,
+  GraduationCap,
   Cpu,
   Cloud,
   Sprout,
@@ -37,6 +38,16 @@ const divisions = [
     description: 'Professional-grade curriculum covering full-stack web, Python engineering, C/C++ systems, and data science.',
     logo: '/app-code.svg',
     url: 'https://www.koneacademy.io',
+    glow: 'rgba(88, 166, 255, 0.15)',
+    color: '#58a6ff',
+    icon: GraduationCap
+  },
+  {
+    name: 'Kone Code',
+    tagline: 'Software Engineering',
+    description: 'Pioneering production-grade custom software engineering, full-stack systems development, and digital transformation.',
+    logo: '/app-code.svg',
+    url: 'https://code.koneacademy.io',
     glow: 'rgba(34, 197, 94, 0.15)',
     color: '#22c55e',
     icon: Code
