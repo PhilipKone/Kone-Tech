@@ -186,7 +186,9 @@ function App() {
         <div className="header-inner">
           <div className="site-logo">
             <img src="/favicon.svg" alt="Kone Tech Logo" className="logo-svg" />
-            <span className="logo-text">Kone Technologies</span>
+            <span className="logo-text">
+              Kone <span className="desktop-only-inline">Technologies</span><span className="mobile-only-inline">Tech</span>
+            </span>
           </div>
 
           {/* Desktop Nav */}
