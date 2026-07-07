@@ -19,6 +19,7 @@ import {
   X
 } from 'lucide-react';
 import './App.css';
+import AppLauncher from './components/AppLauncher';
 
 /* ── Division Data ────────────────────────────────────── */
 const divisions = [
@@ -196,6 +197,7 @@ function App() {
           </nav>
 
           <div className="header-actions">
+            <AppLauncher />
             <a href="https://www.koneacademy.io" target="_blank" rel="noreferrer" className="btn-academy-link desktop-only">
               Visit Kone Academy <ExternalLink size={14} style={{ marginLeft: '4px' }} />
             </a>
@@ -229,9 +231,12 @@ function App() {
             >
               <div className="mobile-nav-header">
                 <span className="logo-text">Kone Tech</span>
-                <button className="close-btn" onClick={() => setMobileMenuOpen(false)}>
-                  <X size={24} />
-                </button>
+                <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center' }}>
+                  <AppLauncher />
+                  <button className="close-btn" onClick={() => setMobileMenuOpen(false)}>
+                    <X size={24} />
+                  </button>
+                </div>
               </div>
               <div className="mobile-menu-links">
                 <a href="#ecosystem" onClick={() => setMobileMenuOpen(false)}>
