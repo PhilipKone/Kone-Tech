@@ -43,8 +43,8 @@ const apps: AppItem[] = [
   {
     name: 'Kone Academy',
     description: 'Software Education',
-    logo: '/favicon.svg',
-    color: 'tech',
+    logo: '/logo-circle-blue.svg',
+    color: 'academy',
     glow: 'rgba(88, 166, 255, 0.12)',
     url: 'https://www.koneacademy.io',
   },
