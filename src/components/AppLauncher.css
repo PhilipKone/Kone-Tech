@@ -70,6 +70,8 @@
   top: calc(100% + 12px);
   right: 0;
   width: 380px;
+  max-height: 480px;
+  overflow-y: auto;
   background: rgba(14, 17, 23, 0.96);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
@@ -85,6 +87,20 @@
   transform: translateY(-10px) scale(0.98);
   transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   pointer-events: none;
+}
+
+.app-launcher-dropdown::-webkit-scrollbar {
+  width: 6px;
+}
+.app-launcher-dropdown::-webkit-scrollbar-track {
+  background: transparent;
+}
+.app-launcher-dropdown::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+}
+.app-launcher-dropdown::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .app-launcher-dropdown.open {
@@ -260,6 +276,7 @@
     right: 50%;
     transform: translateX(50%) translateY(-8px) scale(0.97);
     padding: 1rem;
+    max-height: calc(100vh - 120px);
   }
 
   .app-launcher-dropdown.open {
