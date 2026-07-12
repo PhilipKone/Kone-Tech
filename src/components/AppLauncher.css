@@ -236,6 +236,7 @@
 .app-icon--farms    { background: linear-gradient(135deg, #061c15, #10b981); }
 .app-icon--warp     { background: linear-gradient(135deg, #4a1a30, #ec4899); }
 .app-icon--tech     { background: linear-gradient(135deg, #2e0854, #BC00FF); }
+.app-icon--ai       { background: linear-gradient(135deg, #2e0854, #BC00FF); }
 
 .app-grid-item:hover .app-icon--consult { box-shadow: 0 4px 20px rgba(37, 99, 235, 0.35); }
 .app-grid-item:hover .app-icon--code    { box-shadow: 0 4px 20px rgba(34, 197, 94, 0.35); }
@@ -249,6 +250,7 @@
 .app-grid-item:hover .app-icon--farms   { box-shadow: 0 4px 20px rgba(16, 185, 129, 0.35); }
 .app-grid-item:hover .app-icon--warp    { box-shadow: 0 4px 20px rgba(236, 72, 153, 0.35); }
 .app-grid-item:hover .app-icon--tech    { box-shadow: 0 4px 20px rgba(188, 0, 255, 0.35); }
+.app-grid-item:hover .app-icon--ai      { box-shadow: 0 4px 20px rgba(188, 0, 255, 0.35); }
 
 /* ── Mobile ─────────────────────────────────────────────── */
 

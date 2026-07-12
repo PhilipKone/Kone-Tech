@@ -25,7 +25,7 @@ const apps: AppItem[] = [
   {
     name: 'Kone Technologies',
     description: 'Corporate parent brand',
-    logo: '/favicon.svg',
+    logo: '/logo-tech.svg',
     color: 'tech',
     glow: 'rgba(188, 0, 255, 0.12)',
     url: isLocal 
@@ -125,6 +125,16 @@ const apps: AppItem[] = [
     url: isLocal 
          ? 'http://localhost:5176' 
          : 'https://warp.koneacademy.io',
+  },
+  {
+    name: 'Kone AI',
+    description: 'Neural Architectures',
+    logo: '/app-ai.svg',
+    color: 'ai',
+    glow: 'rgba(188, 0, 255, 0.12)',
+    url: isLocal 
+         ? 'http://localhost:5177' 
+         : 'https://ai.koneacademy.io',
   },
 ];
 
