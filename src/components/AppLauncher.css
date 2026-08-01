@@ -272,15 +272,17 @@
 
 @media (max-width: 768px) {
   .app-launcher-dropdown {
-    width: 300px;
-    right: 50%;
-    transform: translateX(50%) translateY(-8px) scale(0.97);
-    padding: 1rem;
-    max-height: calc(100vh - 120px);
+    width: calc(100vw - 32px) !important;
+    right: 16px !important;
+    left: 16px !important;
+    transform: translateY(-8px) scale(0.97) !important;
+    padding: 1.25rem !important;
+    max-height: calc(100vh - 100px) !important;
+    -webkit-overflow-scrolling: touch;
   }
 
   .app-launcher-dropdown.open {
-    transform: translateX(50%) translateY(0) scale(1);
+    transform: translateY(0) scale(1) !important;
   }
 
   .app-grid {

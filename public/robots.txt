@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://konetech.koneacademy.io/sitemap.xml

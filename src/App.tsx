@@ -25,8 +25,8 @@ import AppLauncher from './components/AppLauncher';
 const divisions = [
   {
     name: 'Kone Consult',
-    tagline: 'Research & Advisory',
-    description: 'Pioneering academic mentoring, advanced statistical analysis, and methodology design to bridge theory with publication.',
+    tagline: 'Data Analysis & Research',
+    description: 'Pioneering academic, business, and software mentoring, advanced statistical analysis, and methodology design to bridge theory with practicals.',
     logo: '/app-consult.svg',
     url: 'https://consult.koneacademy.io',
     glow: 'rgba(37, 99, 235, 0.15)',
@@ -126,7 +126,7 @@ const divisions = [
   {
     name: 'Anim Studio',
     tagline: '3D & VFX Engines',
-    description: 'Advanced browser-based 3D simulation engines, animators, and computer graphics tools.',
+    description: 'Advanced browser-base and desktop 3D simulation engines, animators, and computer graphics tools.',
     logo: '/app-studio.svg',
     url: 'https://lab.koneacademy.io/#/anim-studio',
     glow: 'rgba(239, 68, 68, 0.15)',
@@ -168,6 +168,19 @@ const containerStagger = {
 function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [hoveredCard, setHoveredCard] = useState(null);
+  const [activeTab, setActiveTab] = useState<'home' | 'ecosystem' | 'about'>('home');
+
+  React.useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash;
+      if (hash === '#ecosystem') setActiveTab('ecosystem');
+      else if (hash === '#about') setActiveTab('about');
+      else setActiveTab('home');
+    };
+    window.addEventListener('hashchange', handleHashChange);
+    handleHashChange();
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  }, []);
 
   return (
     <div className="app-container">
@@ -277,7 +290,7 @@ function App() {
               visible: { opacity: 1, y: 0, transition: { type: 'spring', stiffness: 100 } }
             }}
           >
-            <Shield size={12} className="badge-icon" /> Parent Entity of Kone Group
+            <Shield size={12} className="badge-icon" /> Parent Entity of Kone Technologies
           </motion.div>
 
           <motion.h1
@@ -295,7 +308,7 @@ function App() {
             className="hero-subtitle"
             variants={faderUp}
           >
-            Kone Technologies is a decentralized technology holding group directing pioneering research, advanced hardware engineering, elite education, and real-world commercial utilities.
+            Kone Technologies is a decentralized technology holding group directing pioneering research, advanced hardware engineering, elite education, and real-world commercial and software utilities.
           </motion.p>
 
           <motion.div
@@ -437,6 +450,64 @@ function App() {
           </p>
         </div>
       </footer>
+
+      {/* Mobile Floating Bottom Bar (Instagram Neon Tech Style) */}
+      <nav className="tech-mobile-bottom-nav">
+        <a 
+          href="#" 
+          className={`mobile-tab ${activeTab === 'home' ? 'active' : ''}`}
+          onClick={() => setActiveTab('home')}
+          title="Home"
+        >
+          <div className="mobile-icon-pill">
+            <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" strokeWidth="2.2" fill="none" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+          </div>
+        </a>
+        <a 
+          href="#ecosystem" 
+          className={`mobile-tab ${activeTab === 'ecosystem' ? 'active' : ''}`}
+          onClick={() => setActiveTab('ecosystem')}
+          title="Ecosystem"
+        >
+          <div className="mobile-icon-pill">
+            <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" strokeWidth="2.2" fill="none" strokeLinecap="round" strokeLinejoin="round">
+              <rect x="3" y="3" width="7" height="7"></rect>
+              <rect x="14" y="3" width="7" height="7"></rect>
+              <rect x="14" y="14" width="7" height="7"></rect>
+              <rect x="3" y="14" width="7" height="7"></rect>
+            </svg>
+          </div>
+        </a>
+        <a 
+          href="#about" 
+          className={`mobile-tab ${activeTab === 'about' ? 'active' : ''}`}
+          onClick={() => setActiveTab('about')}
+          title="Mission"
+        >
+          <div className="mobile-icon-pill">
+            <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" strokeWidth="2.2" fill="none" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+          </div>
+        </a>
+        <a 
+          href="https://www.koneacademy.io"
+          target="_blank" 
+          rel="noreferrer"
+          className="mobile-tab"
+          title="Kone Academy"
+        >
+          <div className="mobile-icon-pill">
+            <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" strokeWidth="2.2" fill="none" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+              <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+            </svg>
+          </div>
+        </a>
+      </nav>
     </div>
   );
 }

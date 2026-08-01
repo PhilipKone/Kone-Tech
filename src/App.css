@@ -687,3 +687,69 @@
     font-size: 0.8rem;
   }
 }
+
+/* Desktop default: hide mobile bottom nav */
+.tech-mobile-bottom-nav {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle,
+  .mobile-nav-overlay {
+    display: none !important;
+  }
+
+  /* Floating Bottom Navigation Bar (Instagram Purple/Cyan Style) */
+  .tech-mobile-bottom-nav {
+    display: flex;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 36px);
+    max-width: 440px;
+    height: 64px;
+    background: rgba(14, 8, 28, 0.94);
+    border: 1.5px solid rgba(188, 0, 255, 0.25);
+    border-radius: 36px;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 9999;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.75),
+                0 0 20px rgba(188, 0, 255, 0.15);
+    padding: 0 8px;
+  }
+
+  .mobile-tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #8A859E;
+    padding: 6px;
+    border-radius: 26px;
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .mobile-tab .mobile-icon-pill {
+    width: 52px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 22px;
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .mobile-tab.active .mobile-icon-pill {
+    background: rgba(188, 0, 255, 0.18);
+    color: #d8b4fe;
+    border: 1px solid rgba(188, 0, 255, 0.4);
+    box-shadow: 0 0 18px rgba(188, 0, 255, 0.25);
+    transform: scale(1.05);
+  }
+
+  .mobile-tab:active {
+    transform: scale(0.92);
+  }
+}
