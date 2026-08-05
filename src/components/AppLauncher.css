@@ -279,6 +279,7 @@
     width: calc(100vw - 32px) !important;
     max-height: calc(100vh - 170px) !important;
     overflow-y: auto !important;
+    overscroll-behavior: contain !important;
     -webkit-overflow-scrolling: touch !important;
     transform: translateY(-8px) scale(0.97) !important;
     padding: 1.25rem !important;
