@@ -269,8 +269,9 @@ function App() {
         )}
       </AnimatePresence>
 
-      {/* Hero Section */}
-      <section className="hero-section">
+      <main id="main-content">
+        {/* Hero Section */}
+        <section className="hero-section">
         <motion.div
           className="hero-content"
           initial="hidden"
@@ -437,6 +438,7 @@ function App() {
           </motion.div>
         </div>
       </section>
+      </main>
 
       {/* Footer */}
       <footer className="site-footer" style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem', alignItems: 'center', textAlign: 'center', padding: '3rem 1.5rem 5rem' }}>
@@ -503,12 +505,13 @@ function App() {
       </footer>
 
       {/* Mobile Floating Bottom Bar (Instagram Neon Tech Style) */}
-      <nav className="tech-mobile-bottom-nav">
+      <nav className="tech-mobile-bottom-nav" aria-label="Mobile Navigation">
         <a 
           href="#" 
           className={`mobile-tab ${activeTab === 'home' ? 'active' : ''}`}
           onClick={() => setActiveTab('home')}
           title="Home"
+          aria-label="Home"
         >
           <div className="mobile-icon-pill">
             <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" strokeWidth="2.2" fill="none" strokeLinecap="round" strokeLinejoin="round">
@@ -522,6 +525,7 @@ function App() {
           className={`mobile-tab ${activeTab === 'ecosystem' ? 'active' : ''}`}
           onClick={() => setActiveTab('ecosystem')}
           title="Ecosystem"
+          aria-label="Ecosystem"
         >
           <div className="mobile-icon-pill">
             <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" strokeWidth="2.2" fill="none" strokeLinecap="round" strokeLinejoin="round">
@@ -537,6 +541,7 @@ function App() {
           className={`mobile-tab ${activeTab === 'about' ? 'active' : ''}`}
           onClick={() => setActiveTab('about')}
           title="Mission"
+          aria-label="Mission"
         >
           <div className="mobile-icon-pill">
             <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" strokeWidth="2.2" fill="none" strokeLinecap="round" strokeLinejoin="round">
@@ -550,6 +555,7 @@ function App() {
           rel="noreferrer"
           className="mobile-tab"
           title="Kone Academy"
+          aria-label="Kone Academy"
         >
           <div className="mobile-icon-pill">
             <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" strokeWidth="2.2" fill="none" strokeLinecap="round" strokeLinejoin="round">
