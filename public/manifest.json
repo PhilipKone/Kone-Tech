@@ -1,0 +1,45 @@
+{
+  "short_name": "Kone Tech",
+  "name": "Kone Technologies | Parent Organization & Engineering Group",
+  "description": "Kone Technologies is the parent holding organization directing research, software education, advanced engineering, and real-world technology ventures across 11 specialized divisions.",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon-48x48.png",
+      "sizes": "48x48",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/logo512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#03000a",
+  "background_color": "#03000a",
+  "launch_handler": {
+    "client_mode": "focus-existing"
+  }
+}
