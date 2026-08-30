@@ -30,7 +30,7 @@ const apps: AppItem[] = [
     glow: 'rgba(188, 0, 255, 0.12)',
     url: isLocal 
          ? 'http://localhost:5178' 
-         : 'https://konetech.koneacademy.io',
+         : 'https://tech.koneacademy.io',
   },
   {
     name: 'Kone Consult',
