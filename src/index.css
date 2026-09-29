@@ -1,8 +1,8 @@
 /* ── Design System & Variables ─────────────────────────── */
 :root {
-  --font-primary: 'Inter', system-ui, -apple-system, sans-serif;
-  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
-  --font-heading: 'Space Grotesk', 'Inter', sans-serif;
+  --font-primary: 'Nunito', system-ui, -apple-system, sans-serif;
+  --font-sans: 'Nunito', system-ui, -apple-system, sans-serif;
+  --font-heading: 'Baloo 2', 'Nunito', sans-serif;
   --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
   
   /* Color Palette */

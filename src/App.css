@@ -205,10 +205,11 @@
 }
 
 .hero-title {
+  font-family: var(--font-heading);
   font-size: clamp(2.2rem, 5vw, 3.8rem);
   font-weight: 800;
   line-height: 1.15;
-  letter-spacing: -1px;
+  letter-spacing: -0.5px;
   color: #ffffff;
   margin-bottom: 1.5rem;
 }
@@ -343,6 +344,7 @@
 }
 
 .section-title {
+  font-family: var(--font-heading);
   font-size: clamp(1.8rem, 3.5vw, 2.75rem);
   font-weight: 800;
   color: #ffffff;
@@ -450,10 +452,11 @@
 }
 
 .card-title {
-  font-size: 1.2rem;
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
   font-weight: 800;
   color: #ffffff;
-  letter-spacing: -0.3px;
+  letter-spacing: -0.2px;
 }
 
 .card-domain-badge {
@@ -685,6 +688,7 @@
 }
 
 .display-title {
+  font-family: var(--font-heading);
   font-size: 1.5rem;
   font-weight: 800;
   color: #ffffff;
@@ -768,7 +772,8 @@
 }
 
 .standard-title {
-  font-size: 1.15rem;
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
   font-weight: 800;
   color: #ffffff;
   margin-bottom: 0.75rem;
@@ -832,7 +837,8 @@
 }
 
 .gov-title {
-  font-size: 1.4rem;
+  font-family: var(--font-heading);
+  font-size: 1.45rem;
   font-weight: 800;
   color: #ffffff;
 }
