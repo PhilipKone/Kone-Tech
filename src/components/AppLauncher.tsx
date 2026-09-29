@@ -24,17 +24,17 @@ const isLocal = typeof window !== 'undefined' &&
 const apps: AppItem[] = [
   {
     name: 'Kone Technologies',
-    description: 'Corporate parent brand',
+    description: 'Parent Holding & Group Governance',
     logo: '/logo-tech.svg',
     color: 'tech',
     glow: 'rgba(188, 0, 255, 0.12)',
     url: isLocal 
          ? 'http://localhost:5178' 
-         : 'https://tech.koneacademy.io',
+         : 'https://konetech.koneacademy.io',
   },
   {
     name: 'Kone Consult',
-    description: 'Mentorship & research',
+    description: 'Applied Research & Statistics',
     logo: '/app-consult.svg',
     color: 'consult',
     glow: 'rgba(37, 99, 235, 0.12)',
