@@ -23,14 +23,14 @@ const isLocal = typeof window !== 'undefined' &&
 
 const apps: AppItem[] = [
   {
-    name: 'Kone Technologies',
+    name: 'Kone Security',
     description: 'Parent Holding & Group Governance',
     logo: '/logo-tech.svg',
     color: 'tech',
     glow: 'rgba(188, 0, 255, 0.12)',
     url: isLocal 
          ? 'http://localhost:5178' 
-         : 'https://konetech.koneacademy.io',
+         : 'https://security.codkon.com',
   },
   {
     name: 'Kone Consult',
@@ -38,7 +38,7 @@ const apps: AppItem[] = [
     logo: '/app-consult.svg',
     color: 'consult',
     glow: 'rgba(37, 99, 235, 0.12)',
-    url: 'https://consult.koneacademy.io',
+    url: 'https://consult.codkon.com',
   },
   {
     name: 'Kone Academy',
@@ -46,7 +46,7 @@ const apps: AppItem[] = [
     logo: '/logo-circle-blue.svg',
     color: 'academy',
     glow: 'rgba(88, 166, 255, 0.12)',
-    url: 'https://www.koneacademy.io',
+    url: 'https://academy.codkon.com',
   },
   {
     name: 'Kone Code',
@@ -54,7 +54,7 @@ const apps: AppItem[] = [
     logo: '/app-code.svg',
     color: 'code',
     glow: 'rgba(34, 197, 94, 0.12)',
-    url: 'https://code.koneacademy.io',
+    url: 'https://code.codkon.com',
   },
   {
     name: 'Kone Lab',
@@ -62,7 +62,7 @@ const apps: AppItem[] = [
     logo: '/app-lab.svg',
     color: 'lab',
     glow: 'rgba(168, 85, 247, 0.12)',
-    url: 'https://lab.koneacademy.io',
+    url: 'https://lab.codkon.com',
   },
   {
     name: 'Kone Digital',
@@ -70,7 +70,7 @@ const apps: AppItem[] = [
     logo: '/app-digital.svg',
     color: 'digital',
     glow: 'rgba(0, 255, 255, 0.12)',
-    url: 'https://digital.koneacademy.io',
+    url: 'https://digital.codkon.com',
   },
   {
     name: 'Anim Studio',
@@ -80,7 +80,7 @@ const apps: AppItem[] = [
     glow: 'rgba(239, 68, 68, 0.12)',
     url: isLocal 
          ? 'http://localhost:5175/#/anim-studio' 
-         : 'https://lab.koneacademy.io/#/anim-studio',
+         : 'https://lab.codkon.com/#/anim-studio',
   },
   {
     name: 'Kone Kids',
@@ -88,7 +88,7 @@ const apps: AppItem[] = [
     logo: '/app-kids.svg',
     color: 'kids',
     glow: 'rgba(245, 158, 11, 0.12)',
-    url: 'https://kids.koneacademy.io',
+    url: 'https://kids.codkon.com',
   },
   {
     name: 'Kone Shop',
@@ -96,7 +96,7 @@ const apps: AppItem[] = [
     logo: '/app-shop.svg',
     color: 'shop',
     glow: 'rgba(236, 72, 153, 0.12)',
-    url: 'https://shop.koneacademy.io',
+    url: 'https://shop.codkon.com',
   },
   {
     name: 'Kone Pay',
@@ -104,7 +104,7 @@ const apps: AppItem[] = [
     logo: '/app-pay.svg',
     color: 'pay',
     glow: 'rgba(255, 215, 0, 0.12)',
-    url: 'https://consult.koneacademy.io/pay',
+    url: 'https://consult.codkon.com/pay',
   },
   {
     name: 'Kone Farms',
@@ -114,7 +114,7 @@ const apps: AppItem[] = [
     glow: 'rgba(16, 185, 129, 0.12)',
     url: isLocal 
          ? 'http://localhost:3002' 
-         : 'https://farms.koneacademy.io',
+         : 'https://farms.codkon.com',
   },
   {
     name: 'Kone Warp',
@@ -124,7 +124,7 @@ const apps: AppItem[] = [
     glow: 'rgba(236, 72, 153, 0.12)',
     url: isLocal 
          ? 'http://localhost:5176' 
-         : 'https://warp.koneacademy.io',
+         : 'https://warp.codkon.com',
   },
   {
     name: 'Kone AI',
@@ -134,7 +134,7 @@ const apps: AppItem[] = [
     glow: 'rgba(188, 0, 255, 0.12)',
     url: isLocal 
          ? 'http://localhost:5177' 
-         : 'https://ai.koneacademy.io',
+         : 'https://ai.codkon.com',
   },
 ];
 

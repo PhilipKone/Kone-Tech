@@ -1,7 +1,7 @@
 {
-  "short_name": "Kone Tech",
-  "name": "Kone Technologies | Parent Organization & Engineering Group",
-  "description": "Kone Technologies is the parent holding organization directing research, software education, advanced engineering, and real-world technology ventures across 11 specialized divisions.",
+  "short_name": "Kone Security",
+  "name": "Kone Security | Enterprise System & Security",
+  "description": "Kone Security is the enterprise system & security division of Codkon Technologies directing cryptographic standards, zero-trust edge infrastructure, and resilient software systems across 12 specialized divisions.",
   "icons": [
     {
       "src": "/favicon.svg",

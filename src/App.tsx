@@ -63,8 +63,8 @@ const divisions: Division[] = [
     capabilities: ['Econometric Modeling', 'Quantitative Data Analysis', 'Methodology Validation', 'Academic Research Mentorship'],
     techStack: ['Python', 'R', 'SPSS', 'MATLAB', 'LaTeX'],
     logo: '/app-consult.svg',
-    url: 'https://consult.koneacademy.io',
-    domain: 'consult.koneacademy.io',
+    url: 'https://consult.codkon.com',
+    domain: 'consult.codkon.com',
     glow: 'rgba(37, 99, 235, 0.18)',
     color: '#2563eb',
     icon: BrainCircuit,
@@ -80,8 +80,8 @@ const divisions: Division[] = [
     capabilities: ['Computer Vision Telemetry', 'Agentic Workflow Systems', 'Domain-Fine-Tuned LLMs', 'Edge Inference Optimization'],
     techStack: ['PyTorch', 'ONNX', 'WebMCP', 'FastAPI', 'OpenCV'],
     logo: '/app-ai.svg',
-    url: 'https://ai.koneacademy.io',
-    domain: 'ai.koneacademy.io',
+    url: 'https://ai.codkon.com',
+    domain: 'ai.codkon.com',
     glow: 'rgba(188, 0, 255, 0.18)',
     color: '#BC00FF',
     icon: BrainCircuit,
@@ -97,8 +97,8 @@ const divisions: Division[] = [
     capabilities: ['Custom Enterprise Platforms', 'High-Concurrency APIs', 'Cross-Platform Mobile Apps', 'Cloud Infrastructure'],
     techStack: ['React', 'TypeScript', 'Node.js', 'PostgreSQL', 'Docker'],
     logo: '/app-code.svg',
-    url: 'https://code.koneacademy.io',
-    domain: 'code.koneacademy.io',
+    url: 'https://code.codkon.com',
+    domain: 'code.codkon.com',
     glow: 'rgba(34, 197, 94, 0.18)',
     color: '#22c55e',
     icon: Code,
@@ -114,8 +114,8 @@ const divisions: Division[] = [
     capabilities: ['Turnkey WaaS Hubs', 'Direct WhatsApp Conversion Funnels', 'Automated Search Engine Schema', 'Multi-Currency Real-time Billing'],
     techStack: ['Vite', 'React 18', 'Cloudflare Edge', 'Schema.org JSON-LD'],
     logo: '/app-digital.svg',
-    url: 'https://digital.koneacademy.io',
-    domain: 'digital.koneacademy.io',
+    url: 'https://digital.codkon.com',
+    domain: 'digital.codkon.com',
     glow: 'rgba(0, 255, 255, 0.18)',
     color: '#00FFFF',
     icon: Cloud,
@@ -131,8 +131,8 @@ const divisions: Division[] = [
     capabilities: ['Localized Mobile Money & Card Rails', 'Dual GHS/USD Real-time Conversion', 'Automated Ledger Logging', 'Cryptographic Webhook Handlers'],
     techStack: ['Paystack API', 'Firestore Ledgers', 'Serverless Handlers', 'Exchange Rates API'],
     logo: '/app-pay.svg',
-    url: 'https://consult.koneacademy.io/pay',
-    domain: 'consult.koneacademy.io/pay',
+    url: 'https://consult.codkon.com/pay',
+    domain: 'consult.codkon.com/pay',
     glow: 'rgba(234, 179, 8, 0.18)',
     color: '#eab308',
     icon: CreditCard,
@@ -148,8 +148,8 @@ const divisions: Division[] = [
     capabilities: ['Custom PCB Layout & Routing', 'ESP32 Firmware Programming', 'Edge Sensor Interfacing', '3D Mechanical Prototyping'],
     techStack: ['C/C++', 'FreeRTOS', 'KiCAD', 'ESP-IDF', 'Fusion 360'],
     logo: '/app-lab.svg',
-    url: 'https://lab.koneacademy.io',
-    domain: 'lab.koneacademy.io',
+    url: 'https://lab.codkon.com',
+    domain: 'lab.codkon.com',
     glow: 'rgba(168, 85, 247, 0.18)',
     color: '#a855f7',
     icon: Cpu,
@@ -165,8 +165,8 @@ const divisions: Division[] = [
     capabilities: ['Curated Prototyping Components', 'Verified Microcontroller Boards', 'Direct Local Delivery', 'Integrated Cart & Currency Rails'],
     techStack: ['TypeScript', 'PWA Offline Engine', 'Paystack Rails', 'Automated Catalog'],
     logo: '/app-shop.svg',
-    url: 'https://shop.koneacademy.io',
-    domain: 'shop.koneacademy.io',
+    url: 'https://shop.codkon.com',
+    domain: 'shop.codkon.com',
     glow: 'rgba(244, 63, 94, 0.18)',
     color: '#f43f5e',
     icon: ShoppingBag,
@@ -182,8 +182,8 @@ const divisions: Division[] = [
     capabilities: ['Hardware Digital Twins', 'Real-time WebGL Physics', 'Interactive CAD Inspections', 'Mathematical Surface Plotting'],
     techStack: ['Three.js', 'WebGL', 'GLSL Shaders', 'WebAssembly'],
     logo: '/app-studio.svg',
-    url: 'https://lab.koneacademy.io/#/anim-studio',
-    domain: 'lab.koneacademy.io/#/anim-studio',
+    url: 'https://lab.codkon.com/#/anim-studio',
+    domain: 'lab.codkon.com/#/anim-studio',
     glow: 'rgba(239, 68, 68, 0.18)',
     color: '#ef4444',
     icon: Video,
@@ -199,8 +199,8 @@ const divisions: Division[] = [
     capabilities: ['Solar-Powered IoT Field Nodes', 'Soil Chemistry & NPK Telemetry', 'Microclimate Monitoring', 'Crop Yield Analytics'],
     techStack: ['LoRaWAN', 'Solar Edge Telemetry', 'ESP32 Nodes', 'Cloud Time-Series'],
     logo: '/app-farms.svg',
-    url: 'https://farms.koneacademy.io',
-    domain: 'farms.koneacademy.io',
+    url: 'https://farms.codkon.com',
+    domain: 'farms.codkon.com',
     glow: 'rgba(16, 185, 129, 0.18)',
     color: '#10b981',
     icon: Sprout,
@@ -216,8 +216,8 @@ const divisions: Division[] = [
     capabilities: ['Dynamic Vehicle Routing', 'Real-Time Fleet Diagnostics', 'Automated Pricing Telemetry', 'Multi-Modal Dispatch Engine'],
     techStack: ['Geolocation APIs', 'Real-time WebSocket Rails', 'PWA Client', 'Edge Telemetry'],
     logo: '/app-warp.svg',
-    url: 'https://warp.koneacademy.io',
-    domain: 'warp.koneacademy.io',
+    url: 'https://warp.codkon.com',
+    domain: 'warp.codkon.com',
     glow: 'rgba(236, 72, 153, 0.18)',
     color: '#ec4899',
     icon: Navigation,
@@ -233,8 +233,8 @@ const divisions: Division[] = [
     capabilities: ['Comprehensive Full-Stack Curricula', 'Systems Programming (C/C++)', 'Face-to-Face & Remote Labs', 'Hands-On Capstone Projects'],
     techStack: ['React', 'Python', 'C/C++', 'PostgreSQL', 'Linux'],
     logo: '/logo-circle-blue.svg',
-    url: 'https://www.koneacademy.io',
-    domain: 'www.koneacademy.io',
+    url: 'https://academy.codkon.com',
+    domain: 'academy.codkon.com',
     glow: 'rgba(88, 166, 255, 0.18)',
     color: '#58a6ff',
     icon: GraduationCap,
@@ -250,8 +250,8 @@ const divisions: Division[] = [
     capabilities: ['Interactive Robotics Workshops', 'Visual Block Logic Curricula', 'Hands-On Circuit Prototyping', 'Gamified STEM Challenges'],
     techStack: ['Blockly', 'Micro:bit', 'Scratch Engine', 'PWA Platform'],
     logo: '/app-kids.svg',
-    url: 'https://kids.koneacademy.io',
-    domain: 'kids.koneacademy.io',
+    url: 'https://kids.codkon.com',
+    domain: 'kids.codkon.com',
     glow: 'rgba(249, 115, 22, 0.18)',
     color: '#f97316',
     icon: Smile,
@@ -351,10 +351,10 @@ function App() {
       >
         <div className="header-inner">
           <div className="site-logo">
-            <img src="/favicon.svg" alt="Kone Technologies Emblem" className="logo-svg" />
+            <img src="/favicon.svg" alt="Kone Security Emblem" className="logo-svg" />
             <div className="logo-text-group">
-              <span className="logo-text">Kone Technologies</span>
-              <span className="logo-subtext">Parent Organization & Engineering Group</span>
+              <span className="logo-text">Kone Security</span>
+              <span className="logo-subtext">Enterprise System & Security Division</span>
             </div>
           </div>
 
@@ -368,7 +368,7 @@ function App() {
 
           <div className="header-actions">
             <AppLauncher />
-            <a href="https://www.koneacademy.io" target="_blank" rel="noreferrer" className="btn-academy-link desktop-only">
+            <a href="https://academy.codkon.com" target="_blank" rel="noreferrer" className="btn-academy-link desktop-only">
               Kone Academy <ExternalLink size={13} style={{ marginLeft: '4px' }} />
             </a>
             <button
@@ -402,7 +402,7 @@ function App() {
               <div className="mobile-nav-header">
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
                   <img src="/favicon.svg" alt="Kone Tech" width="24" height="24" />
-                  <span className="logo-text" style={{ fontSize: '1rem' }}>Kone Technologies</span>
+                  <span className="logo-text" style={{ fontSize: '1rem' }}>Kone Security</span>
                 </div>
                 <button className="close-btn" onClick={() => setMobileMenuOpen(false)}>
                   <X size={22} />
@@ -421,7 +421,7 @@ function App() {
                 <a href="#governance" onClick={() => setMobileMenuOpen(false)}>
                   <span>04.</span> Governance & Leadership
                 </a>
-                <a href="https://www.koneacademy.io" target="_blank" rel="noreferrer">
+                <a href="https://academy.codkon.com" target="_blank" rel="noreferrer">
                   <span>05.</span> Kone Academy Hub <ExternalLink size={14} style={{ marginLeft: '6px', display: 'inline' }} />
                 </a>
               </div>
@@ -452,7 +452,7 @@ function App() {
                 visible: { opacity: 1, y: 0, transition: { type: 'spring', stiffness: 120 } }
               }}
             >
-              <Building2 size={13} className="badge-icon" /> Group Governance & Corporate Parent
+              <Building2 size={13} className="badge-icon" /> Enterprise System & Security Division
             </motion.div>
 
             <motion.h1
@@ -470,13 +470,13 @@ function App() {
               className="hero-subtitle"
               variants={faderUp}
             >
-              Kone Technologies directs a federated ecosystem of 11 specialized divisions. We bridge academic rigor, microcontroller hardware engineering, localized multi-currency financial rails, and cloud deployments into unified operational platforms.
+              Kone Security serves as the enterprise system & security division of Codkon Technologies, safeguarding 12 specialized divisions across cryptographic standards, zero-trust edge infrastructure, localized multi-currency financial rails, and WebMCP agentic platforms.
             </motion.p>
 
             {/* Verified Operational Facts Bar */}
             <motion.div className="metrics-strip" variants={faderUp}>
               <div className="metric-cell">
-                <span className="metric-value text-gradient">11</span>
+                <span className="metric-value text-gradient">12</span>
                 <span className="metric-label">Federated Divisions</span>
               </div>
               <div className="metric-divider"></div>
@@ -520,7 +520,7 @@ function App() {
             variants={faderUp}
           >
             <div className="section-eyebrow">Federated Directory</div>
-            <h2 className="section-title">The Kone Technologies Ecosystem</h2>
+            <h2 className="section-title">The Codkon Technologies Ecosystem</h2>
             <p className="section-subtitle">
               Each division operates with focused domain autonomy while sharing unified governance, cryptographic security standards, and our closed-loop innovation pipeline.
             </p>
@@ -629,7 +629,7 @@ function App() {
             <div className="section-eyebrow">Operating Architecture</div>
             <h2 className="section-title">The Innovation Flywheel</h2>
             <p className="section-subtitle">
-              How value, data, and engineering breakthroughs cycle autonomously across our 11 federated divisions.
+              How value, data, and engineering breakthroughs cycle autonomously across all 12 federated Codkon divisions.
             </p>
           </motion.div>
 
@@ -695,7 +695,7 @@ function App() {
             <div className="section-eyebrow">Engineering Rigor</div>
             <h2 className="section-title">Institutional Standards & Governance</h2>
             <p className="section-subtitle">
-              Four fundamental architectural commitments governing every platform and device engineered within Kone Technologies.
+              Four fundamental architectural commitments governing every platform and device engineered across Codkon Technologies and Kone Security.
             </p>
           </motion.div>
 
@@ -719,7 +719,7 @@ function App() {
               </div>
               <h3 className="standard-title">Open Agentic Discoverability</h3>
               <p className="standard-desc">
-                Every Kone Technologies platform provides native machine-readable context via <code className="inline-code">llms.txt</code> and declarative WebMCP schemas, allowing autonomous AI agents to browse, discover, and interact with our services.
+                Every Codkon Technologies platform provides native machine-readable context via <code className="inline-code">llms.txt</code> and declarative WebMCP schemas, allowing autonomous AI agents to browse, discover, and interact with our services.
               </p>
               <div className="standard-spec">
                 <span>Standard:</span> WebMCP & Structured LLM Context
@@ -768,13 +768,13 @@ function App() {
             </div>
 
             <p className="gov-body">
-              Kone Technologies operates as the parent technology and governance collective established by <strong>Philip Kone Hotor</strong>. Directing 11 specialized divisions spanning scientific inquiry, full-stack software, IoT agriculture, hardware manufacturing, and youth STEM, the group is committed to sustainable technological industrialization across West Africa and worldwide.
+              Kone Security operates as the enterprise system and security division within <strong>Codkon Technologies</strong>, founded by <strong>Philip Kone Hotor</strong>. Securing 12 specialized divisions spanning scientific inquiry, full-stack software, IoT agriculture, hardware manufacturing, and youth STEM, the division safeguards technological infrastructure across West Africa and worldwide.
             </p>
 
             <div className="gov-footer-links">
               <div className="gov-link-item">
                 <span className="gov-link-label">Parent Entity:</span>
-                <span className="gov-link-val">Kone Technologies Group</span>
+                <span className="gov-link-val">Codkon Technologies</span>
               </div>
               <div className="gov-link-item">
                 <span className="gov-link-label">Headquarters:</span>
@@ -796,10 +796,10 @@ function App() {
             <div className="footer-col-brand">
               <div className="footer-brand">
                 <img src="/favicon.svg" alt="Logo" className="footer-logo" width="28" height="28" />
-                <span className="footer-brand-title">Kone Technologies</span>
+                <span className="footer-brand-title">Kone Security</span>
               </div>
               <p className="footer-brand-desc">
-                Parent holding entity and governance organization directing pioneering research, advanced hardware prototyping, and scaled software systems.
+                Enterprise system & security division of Codkon Technologies safeguarding pioneering research, advanced hardware prototyping, and scaled software systems.
               </p>
               <div className="footer-action-links">
                 <a 
@@ -819,30 +819,30 @@ function App() {
             <div className="footer-col-nav">
               <div className="footer-nav-title">Research & Software</div>
               <ul className="footer-nav-list">
-                <li><a href="https://consult.koneacademy.io" target="_blank" rel="noreferrer">Kone Consult</a></li>
-                <li><a href="https://code.koneacademy.io" target="_blank" rel="noreferrer">Kone Code</a></li>
-                <li><a href="https://digital.koneacademy.io" target="_blank" rel="noreferrer">Kone Digital</a></li>
-                <li><a href="https://ai.koneacademy.io" target="_blank" rel="noreferrer">Kone AI</a></li>
-                <li><a href="https://consult.koneacademy.io/pay" target="_blank" rel="noreferrer">Kone Pay</a></li>
+                <li><a href="https://consult.codkon.com" target="_blank" rel="noreferrer">Kone Consult</a></li>
+                <li><a href="https://code.codkon.com" target="_blank" rel="noreferrer">Kone Code</a></li>
+                <li><a href="https://digital.codkon.com" target="_blank" rel="noreferrer">Kone Digital</a></li>
+                <li><a href="https://ai.codkon.com" target="_blank" rel="noreferrer">Kone AI</a></li>
+                <li><a href="https://consult.codkon.com/pay" target="_blank" rel="noreferrer">Kone Pay</a></li>
               </ul>
             </div>
 
             <div className="footer-col-nav">
               <div className="footer-nav-title">Hardware & Operations</div>
               <ul className="footer-nav-list">
-                <li><a href="https://lab.koneacademy.io" target="_blank" rel="noreferrer">Kone Lab</a></li>
-                <li><a href="https://farms.koneacademy.io" target="_blank" rel="noreferrer">Kone Farms</a></li>
-                <li><a href="https://warp.koneacademy.io" target="_blank" rel="noreferrer">Kone Warp</a></li>
-                <li><a href="https://shop.koneacademy.io" target="_blank" rel="noreferrer">Kone Shop</a></li>
-                <li><a href="https://lab.koneacademy.io/#/anim-studio" target="_blank" rel="noreferrer">Anim Studio</a></li>
+                <li><a href="https://lab.codkon.com" target="_blank" rel="noreferrer">Kone Lab</a></li>
+                <li><a href="https://farms.codkon.com" target="_blank" rel="noreferrer">Kone Farms</a></li>
+                <li><a href="https://warp.codkon.com" target="_blank" rel="noreferrer">Kone Warp</a></li>
+                <li><a href="https://shop.codkon.com" target="_blank" rel="noreferrer">Kone Shop</a></li>
+                <li><a href="https://lab.codkon.com/#/anim-studio" target="_blank" rel="noreferrer">Anim Studio</a></li>
               </ul>
             </div>
 
             <div className="footer-col-nav">
               <div className="footer-nav-title">Education & Pipeline</div>
               <ul className="footer-nav-list">
-                <li><a href="https://www.koneacademy.io" target="_blank" rel="noreferrer">Kone Academy</a></li>
-                <li><a href="https://kids.koneacademy.io" target="_blank" rel="noreferrer">Kone Kids</a></li>
+                <li><a href="https://academy.codkon.com" target="_blank" rel="noreferrer">Kone Academy</a></li>
+                <li><a href="https://kids.codkon.com" target="_blank" rel="noreferrer">Kone Kids</a></li>
                 <li><a href="/llms.txt" target="_blank">LLM Context (/llms.txt)</a></li>
                 <li><a href="/sitemap.xml" target="_blank">Sitemap</a></li>
               </ul>
@@ -851,11 +851,11 @@ function App() {
 
           <div className="footer-bottom-bar">
             <p className="footer-copyright">
-              &copy; {new Date().getFullYear()} Kone Technologies Group. All rights reserved. Directed by Philip Kone Hotor.
+              &copy; {new Date().getFullYear()} Kone Security · Codkon Technologies. All rights reserved. Directed by Philip Kone Hotor.
             </p>
             <div className="footer-tagline-status">
               <span className="status-indicator-live"></span>
-              <span>11 Federated Divisions Active</span>
+              <span>12 Federated Divisions Secured</span>
             </div>
           </div>
         </div>
