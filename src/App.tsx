@@ -851,7 +851,7 @@ function App() {
 
           <div className="footer-bottom-bar">
             <p className="footer-copyright">
-              &copy; {new Date().getFullYear()} Kone Security · Codkon Technologies. All rights reserved. Directed by Philip Kone Hotor.
+              &copy; {new Date().getFullYear()} Kone Security · Codkon Technologies. All rights reserved.
             </p>
             <div className="footer-tagline-status">
               <span className="status-indicator-live"></span>
