@@ -30,7 +30,6 @@ import {
   ChevronRight
 } from 'lucide-react';
 import './App.css';
-import AppLauncher from './components/AppLauncher';
 
 /* ── Division Definition ──────────────────────────────── */
 interface Division {
@@ -367,7 +366,6 @@ function App() {
           </nav>
 
           <div className="header-actions">
-            <AppLauncher />
             <a href="https://academy.codkon.com" target="_blank" rel="noreferrer" className="btn-academy-link desktop-only">
               Kone Academy <ExternalLink size={13} style={{ marginLeft: '4px' }} />
             </a>
@@ -851,7 +849,7 @@ function App() {
 
           <div className="footer-bottom-bar">
             <p className="footer-copyright">
-              &copy; {new Date().getFullYear()} Kone Security � Codkon Technologies. All rights reserved.
+              &copy; {new Date().getFullYear()} Kone Security � Codkon Technologies. All rights reserved.
             </p>
             <div className="footer-tagline-status">
               <span className="status-indicator-live"></span>
