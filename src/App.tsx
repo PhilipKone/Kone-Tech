@@ -366,9 +366,6 @@ function App() {
           </nav>
 
           <div className="header-actions">
-            <a href="https://academy.codkon.com" target="_blank" rel="noreferrer" className="btn-academy-link desktop-only">
-              Kone Academy <ExternalLink size={13} style={{ marginLeft: '4px' }} />
-            </a>
             <button
               className="menu-toggle"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -418,9 +415,6 @@ function App() {
                 </a>
                 <a href="#governance" onClick={() => setMobileMenuOpen(false)}>
                   <span>04.</span> Governance & Leadership
-                </a>
-                <a href="https://academy.codkon.com" target="_blank" rel="noreferrer">
-                  <span>05.</span> Kone Academy Hub <ExternalLink size={14} style={{ marginLeft: '6px', display: 'inline' }} />
                 </a>
               </div>
             </motion.div>
